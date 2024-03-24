@@ -1,0 +1,58 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&family=Roboto:wght@400;500&display=swap');
+
+:root {
+    --paragraph-font: 'Roboto', sans-serif;
+}
+
+body {
+    font-family: var(--paragraph-font);
+    max-width: 960px;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+:root {
+    --primary-color: #003366;
+    --secondary-color: #006600;
+    --accent-color: #FFD700;
+    --additional-accent-color: #FFFFFF;
+    --heading-font: 'Montserrat', sans-serif;
+    --paragraph-font: 'Roboto', sans-serif;
+    --navigation-background-color: #003366;
+    --navigation-link-color: #FFFFFF;
+    --navigation-hover-link-color: #FFD700;
+    --navigation-hover-background-color: #006600;
+}
+
+h1, h2, h3, h4, h5, h6 {
+    font-family: var(--heading-font);
+    color: var(--primary-color); 
+}
+
+header {
+    padding: 20px;
+    background-color: var(--secondary-color); 
+}
+
+p {
+    padding: 10px 0; 
+}
+
+nav {
+    background-color: var(--navigation-background-color);
+    padding: 10px;
+}
+
+nav a {
+    color: var(--navigation-link-color); 
+    text-decoration: none;
+    padding: 5px 10px;
+    margin: 0 5px;
+}
+
+nav a:hover {
+    color: var(--navigation-hover-link-color);
+    background-color: var(--navigation-hover-background-color); 
+}
+
+
