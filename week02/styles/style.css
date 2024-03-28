@@ -1,15 +1,76 @@
-main {
-    max-width: 840px;
+/* Reset CSS */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
 }
 
-aside{
-    width: 20rem;
+/* Class Selectors */
+.box {
     margin: 1rem;
-    border: 1px solid rgba(0, 0, 0, 0.2);
     padding: 1rem;
-    background-color: #eee;
-    color:#333;
-    text-align: center; 
+    background-color: #f0f0f0; /* Example background color */
+    color: #333; /* Example text color */
+    border: 1px solid #ccc; /* Example border */
+}
+
+/* Profile Image */
+.main_img {
+    float: right;
+}
+
+/* Navigation Styling */
+nav {
+    background-color: #333;
+    color: #fff;
+    padding: 10px;
+}
+
+nav a {
+    color: #fff;
+    text-decoration: none;
+    margin-right: 10px;
+}
+
+nav a:hover {
+    text-decoration: underline;
+}
+
+/* Footer Styling */
+footer {
+    background-color: #333;
+    color: #fff;
+    text-align: center;
+    padding: 10px;
+}
+
+/* Additional Styling */
+main {
+    padding: 20px;
+}
+
+aside {
+    margin-top: 20px;
+    position: relative; /* Added position relative */
+}
+
+/* Temple List Styling */
+.temple-list {
+    margin: 1rem;
+    padding: 1rem;
+    background-color: #f0f0f0; /* Example background color */
+    color: #333; /* Example text color */
+    border: 1px solid #ccc; /* Example border */
+}
+
+/* Positioning for State/Country Heading */
+.state-country-heading {
+    position: absolute;
+    top: 20px;
+    left: 20px;
+    background-color: rgba(255, 255, 255, 0.7); /* Example background color */
+    padding: 10px;
+    border-radius: 5px;
 }
 
 .scenery{
