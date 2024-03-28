@@ -1,94 +1,78 @@
-/* Reset CSS */
 * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
 }
 
-/* Class Selectors */
 .box {
     margin: 1rem;
     padding: 1rem;
-    background-color: #f0f0f0; /* Example background color */
-    color: #333; /* Example text color */
-    border: 1px solid #ccc; /* Example border */
+    background-color: #f0f0f0; 
+    color: #333; 
+    border: 1px solid #ccc; 
 }
 
-/* Profile Image */
 .main_img {
     float: right;
 }
 
-/* Navigation Styling */
 nav {
     background-color: #333;
     color: #fff;
     padding: 10px;
+    display: flex; 
+    justify-content: space-evenly; 
+    align-items: center; 
 }
 
 nav a {
-    color: #fff;
-    text-decoration: none;
-    margin-right: 10px;
+    display: block; 
+    padding: 10px; 
+    text-decoration: none; 
+    color: #fff; 
+}
+
+.scenery {
+    max-width: 100%; 
+    height: auto; 
+    display: block; 
+    margin: 0 auto; 
 }
 
 nav a:hover {
-    text-decoration: underline;
+    text-decoration: underline; 
 }
 
-/* Footer Styling */
 footer {
     background-color: #333;
     color: #fff;
     text-align: center;
     padding: 10px;
+    max-width: 840px;
+    margin: 0 auto; 
+    margin-top: 15px;
+    border-top: 1px solid #000;
 }
 
-/* Additional Styling */
+h1 {
+    border-bottom: 1px solid #ccc; 
+}
+
+.grid {
+    display: grid;
+    align-items: center;
+    max-width: 840px;
+    margin: 0 auto; 
+}
+
 main {
-    padding: 20px;
+    grid-column: 2/3; 
+    margin: 1rem;
 }
 
 aside {
-    margin-top: 20px;
-    position: relative; /* Added position relative */
-}
-
-/* Temple List Styling */
-.temple-list {
-    margin: 1rem;
-    padding: 1rem;
-    background-color: #f0f0f0; /* Example background color */
-    color: #333; /* Example text color */
-    border: 1px solid #ccc; /* Example border */
-}
-
-/* Positioning for State/Country Heading */
-.state-country-heading {
-    position: absolute;
-    top: 20px;
-    left: 20px;
-    background-color: rgba(255, 255, 255, 0.7); /* Example background color */
-    padding: 10px;
-    border-radius: 5px;
-}
-
-.scenery{
-    width: 200px;
-    height: auto;
-}
-
-.main_img{
-    width: 150px;
-    height: auto;
-}
-
-p{
-    padding: 0;
-}
-
-footer{
-    margin-top: 15px;
-    border-top: 1px solid #000;
-    text-align: center;
+    width: 20rem;
+    position: relative;
+    grid-column: 1/2; 
+    grid-row: 1/2; 
 }
