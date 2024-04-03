@@ -6,18 +6,17 @@
     --text-color: #333333;
 }
 
-/* CSS styles for navigation menu */
 header {
   display: flex;
   justify-content: space-between;
   align-items: center;
   padding: 20px;
-  background-color: #336699; /* Change as needed */
-  color: white; /* Change as needed */
+  background-color: #336699;
+  color: white;
 }
 
 .logo {
-  width: 100px; /* Adjust as needed */
+  width: 100px;
   height: auto;
 }
 
@@ -36,7 +35,7 @@ header {
 
 .navigation a {
   text-decoration: none;
-  color: white; /* Change as needed */
+  color: white;
   font-weight: bold;
 }
 
@@ -101,7 +100,6 @@ footer a {
     margin-left: 10px;
 }
 
-/* Additional styles for history and adventures sections */
 .history-section {
     padding: 20px;
     background-color: #f0f0f0;
@@ -132,11 +130,10 @@ footer a {
     margin-top: 10px;
 }
 
-/* CSS styles for adventures section */
 .adventures-section {
   display: flex;
-  flex-wrap: nowrap; /* Ensures images stay in a single row */
-  overflow-x: auto; /* Allows horizontal scrolling if images exceed container width */
+  flex-wrap: nowrap;
+  overflow-x: auto;
 }
 
 .adventures-section h2 {
@@ -144,42 +141,17 @@ footer a {
   margin-bottom: 20px;
 }
 
-/* CSS styles for adventures section */
-.adventures-section {
-  display: flex; /* Display children elements in a row */
-  justify-content: space-between; /* Distribute space between elements */
-}
-
-.adventures-section figure {
-  margin-right: 20px; /* Adjust spacing between images */
-}
-
-.adventures-section figure:last-child {
-  margin-right: 0; /* Remove margin from last image */
-}
-
-.adventures-section img {
-  max-width: 100%; /* Ensure images do not exceed their container width */
-  height: auto; /* Maintain aspect ratio */
-}
-
-.adventures-section figcaption {
-  text-align: center;
-  margin-top: 10px;
-}
-
-/* CSS styles for footer */
 footer {
   display: flex;
-  justify-content: space-between; /* Aligns items to the start and end of the container */
-  align-items: center; /* Centers items vertically */
-  padding: 10px 20px; /* Adjust padding as needed */
-  background-color: #f0f0f0; /* Example background color */
-  border-top: 1px solid #ccc; /* Example border */
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px 20px;
+  background-color: #f0f0f0;
+  border-top: 1px solid #ccc;
 }
 
 footer p {
-  margin: 0; /* Remove default margin */
+  margin: 0;
 }
 
 .social-icons {
@@ -187,17 +159,65 @@ footer p {
 }
 
 .social-icons a {
-  margin-left: 10px; /* Adjust spacing between icons */
+  margin-left: 10px;
 }
 
-/* CSS styles */
-.content {
-  display: flex;
-  align-items: center; /* Center aligns flex items vertically */
+.contact-form {
+    margin-top: 50px;
+    padding: 20px;
+    background-color: #f0f0f0;
+    border: 1px solid #ccc;
 }
 
-.content img {
-  max-width: 50%; /* Ensure image does not exceed 50% of container width */
-  height: auto; /* Maintain aspect ratio */
-  margin-right: 20px; /* Add space between image and text */
+.contact-form h2 {
+    color: var(--primary-color);
+    margin-bottom: 20px;
+}
+
+.contact-form form {
+    display: flex;
+    flex-direction: column;
+}
+
+.contact-form label,
+.contact-form textarea,
+.contact-form input[type="text"],
+.contact-form input[type="email"],
+.contact-form input[type="checkbox"],
+.contact-form button {
+    margin-bottom: 10px;
+}
+
+.contact-form textarea {
+    height: 100px;
+}
+
+.contact-form input[type="checkbox"] {
+    margin-top: 10px;
+}
+
+
+.employee-profiles {
+    margin-top: 30px;
+}
+.employee-profiles {
+  text-align: center; 
+}
+
+.employee {
+  display: inline-block;
+  vertical-align: top;
+  margin-right: 20px;
+}
+
+.employee img {
+  display: block;
+  max-width: 250px;
+  height: auto;
+}
+
+
+
+.employee p {
+    margin: 0;
 }
