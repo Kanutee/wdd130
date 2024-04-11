@@ -43,6 +43,13 @@ header {
   text-decoration: underline;
 }
 
+.grid {
+  display: grid;
+  align-items: center;
+  max-width: 840px;
+  margin: 0 auto; 
+}
+
 body {
     font-family: 'Roboto', sans-serif;
     color: var(--text-color);
@@ -115,14 +122,15 @@ footer a {
     margin-top: 10px;
 }
 
-.adventures-section {
-    display: grid;
-    grid-template-columns: repeat(5, 1fr);
-    gap: 10px;
+.adventures-section figure {
+  display: inline-block;
+  width: 100%; /* Set the width of each figure */
+  text-align: center;
 }
 
-.adventures-section figure {
-    margin: 0;
+.adventures-section img {
+  width: 100%; /* Ensure the image fills its parent figure */
+  height: auto; /* Maintain aspect ratio */
 }
 
 .adventures-section figcaption {
@@ -216,8 +224,162 @@ footer p {
   height: auto;
 }
 
-
-
 .employee p {
     margin: 0;
+}
+
+.content {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+}
+
+.content img {
+  max-width: 100%;
+  height: auto;
+  margin-bottom: 10px; /* Optional: Add some space between image and paragraph */
+}
+.employee-profiles {
+  display: flex;
+  flex-direction:column;
+  align-items: center;
+  text-align: center;
+}
+
+.employee {
+  margin-bottom: 20px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.employee img {
+  width: 200px; /* Set a fixed width */
+  height: 200px; /* Set a fixed height */
+  object-fit: cover; /* Maintain aspect ratio and cover entire space */
+  border-radius: 50%; /* Make the image round */
+  margin-bottom: 10px; /* Add some space between image and text */
+}
+
+/* Styles for the call-to-action section */
+.cta {
+  margin-top: 20px; /* Add some space between the trip descriptions and the call-to-action */
+}
+
+.cta p {
+  font-size: 1.1rem;
+  color: #333;
+}
+
+.cta a {
+  color: #336699;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+.cta a:hover {
+  text-decoration: underline;
+}
+
+.trip {
+  text-align: center; /* Align contents to the center */
+}
+
+.trip-image {
+  width: 200px; /* Set a fixed width for the images */
+  height: 150px; /* Set a fixed height for the images */
+}
+
+.trip {
+  text-align: center;
+}
+
+.trip p.price {
+  font-weight: bold; /* Make the price text bold */
+  color: #FF5733; /* Set a different color for the price text */
+}
+
+.cta {
+  text-align: center; /* Align the content to the center */
+  margin-top: 20px; /* Add some space between the trips and the call to action */
+}
+
+.cta a {
+  display: inline-block; /* Make the link a block element */
+  padding: 10px 20px; /* Add padding to the link */
+  background-color: #FF5733; /* Set a background color */
+  color: white; /* Set text color to white */
+  text-decoration: none; /* Remove underline */
+  border-radius: 5px; /* Add border radius for rounded corners */
+  transition: background-color 0.3s; /* Add transition for smooth hover effect */
+}
+
+.cta a:hover {
+  background-color: #D35400; /* Change background color on hover */
+}
+/* Testimonials Section Styles */
+.testimonials {
+  background-color: #f2f2f2;
+  padding: 50px 0;
+  text-align: center; /* Center the content */
+}
+
+.testimonial {
+  margin-bottom: 30px;
+  display: inline-block; /* Display testimonials inline */
+  text-align: left; /* Align text to the left */
+}
+
+.testimonial img {
+  border-radius: 50%;
+  width: 100px;
+  height: 100px;
+  margin-bottom: 20px;
+  display: block; /* Ensure the image is block-level for centering */
+  margin: 0 auto; /* Center the image horizontally */
+}
+
+.hero {
+  position: relative;
+  height: 400px; /* Adjust height as needed */
+  background-image: url('../images/img6.jpg'); 
+  background-size: cover;
+  background-position: center;
+  color: #fff; /* Text color */
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.hero-content {
+  max-width: 600px;
+  margin-bottom: 20px;
+}
+
+.hero-content h1 {
+  font-size: 2.5rem;
+  margin-bottom: 10px;
+}
+
+.hero-content p {
+  font-size: 1.2rem;
+  margin-bottom: 20px;
+}
+
+.cta-button {
+  background-color: #336699;
+  color: #fff;
+  padding: 10px 20px;
+  font-size: 1.2rem;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.cta-button:hover {
+  background-color: #204d74;
 }
